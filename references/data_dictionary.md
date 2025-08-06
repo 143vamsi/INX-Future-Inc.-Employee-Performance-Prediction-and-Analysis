@@ -1,0 +1,30 @@
+| Column Name | Data Type | Description |
+|-------------|-----------|-------------|
+| EmpNumber | object | (Description to be filled) |
+| Age | int64 | (Description to be filled) |
+| Gender | object | (Description to be filled) |
+| EducationBackground | object | (Description to be filled) |
+| MaritalStatus | object | (Description to be filled) |
+| EmpDepartment | object | (Description to be filled) |
+| EmpJobRole | object | (Description to be filled) |
+| BusinessTravelFrequency | object | (Description to be filled) |
+| DistanceFromHome | int64 | (Description to be filled) |
+| EmpEducationLevel | int64 | (Description to be filled) |
+| EmpEnvironmentSatisfaction | int64 | (Description to be filled) |
+| EmpHourlyRate | int64 | (Description to be filled) |
+| EmpJobInvolvement | int64 | (Description to be filled) |
+| EmpJobLevel | int64 | (Description to be filled) |
+| EmpJobSatisfaction | int64 | (Description to be filled) |
+| NumCompaniesWorked | int64 | (Description to be filled) |
+| OverTime | object | (Description to be filled) |
+| EmpLastSalaryHikePercent | int64 | (Description to be filled) |
+| EmpRelationshipSatisfaction | int64 | (Description to be filled) |
+| TotalWorkExperienceInYears | int64 | (Description to be filled) |
+| TrainingTimesLastYear | int64 | (Description to be filled) |
+| EmpWorkLifeBalance | int64 | (Description to be filled) |
+| ExperienceYearsAtThisCompany | int64 | (Description to be filled) |
+| ExperienceYearsInCurrentRole | int64 | (Description to be filled) |
+| YearsSinceLastPromotion | int64 | (Description to be filled) |
+| YearsWithCurrManager | int64 | (Description to be filled) |
+| Attrition | object | (Description to be filled) |
+| PerformanceRating | int64 | (Description to be filled) |
