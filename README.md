@@ -33,6 +33,88 @@ Saved inside: `models/saved/`
 
 ---
 
+---
+
+## 🎯 Objective
+
+To develop a predictive analytics solution that classifies employee performance based on historical data. This project helps HR departments identify high or low-performing employees, enabling proactive decisions on promotions, training, or intervention.
+
+---
+
+## 📌 Problem Statement
+
+**INX Future Inc.** is facing challenges in evaluating employee performance objectively across departments. The current manual evaluation process is biased and inconsistent. They provided a dataset containing employee attributes and performance tags and requested a data-driven solution.
+
+---
+
+## 📊 Dataset
+
+- **Source**: Provided by INX Future Inc.
+- **Size**: ~3000+ records
+- **Target Variable**: `PerformanceRating`
+- **Important Features**:
+  - Age
+  - Gender
+  - Education Background
+  - Department
+  - Job Role
+  - Overtime
+  - Total Experience
+  - Relationship Satisfaction
+  - Training in Last Year
+  - Years With Current Manager
+
+---
+
+## 🔍 Notebooks Breakdown
+
+### 1. 📘 `data_processing.ipynb`
+- Loads the raw data
+- Handles missing values
+- Encodes categorical variables
+- Feature selection & scaling
+- Saves the processed data into `processed/` folder
+
+### 2. 📘 `data_exploratory_analysis.ipynb`
+- Visualizes data distributions
+- Performs correlation analysis
+- Compares categorical feature impacts
+- Plots histograms, boxplots, and heatmaps
+
+### 3. 📘 `train_model.ipynb`
+- Imports processed data
+- Splits into train and test sets
+- Trains multiple ML models (Random Forest, Logistic Regression, etc.)
+- Compares performance with accuracy, precision, recall, F1 score
+- Saves best model as `employee_perf_rf_model.pkl`
+- Saves `required_features.pkl` list for later use
+
+### 4. 📘 `predict_model.ipynb`
+- Loads saved model and required features
+- Loads new unseen data
+- Predicts employee performance categories
+- Exports results to Excel or CSV
+
+### 5. 📘 `visualize.ipynb`
+- Plots final insights
+- Bar chart of department-wise performance
+- Heatmap for feature impact
+- Visualization of prediction vs actual (confusion matrix, classification report)
+
+---
+
+## ✅ Features Used in Model
+
+```python
+['Age', 'Gender', 'EducationBackground', 'MaritalStatus', 'EmpDepartment', 
+ 'EmpJobRole', 'BusinessTravelFrequency', 'DistanceFromHome', 'EmpEducationLevel',
+ 'EmpEnvironmentSatisfaction', 'EmpHourlyRate', 'EmpJobInvolvement', 'EmpJobLevel',
+ 'EmpJobSatisfaction', 'NumCompaniesWorked', 'OverTime', 'EmpLastSalaryHikePercent',
+ 'EmpRelationshipSatisfaction', 'TotalWorkExperienceInYears', 'TrainingTimesLastYear',
+ 'EmpWorkLifeBalance', 'ExperienceYearsAtThisCompany', 'ExperienceYearsInCurrentRole',
+ 'YearsSinceLastPromotion', 'YearsWithCurrManager', 'Attrition', 'EmpNumber']
+
+
 ## ▶️ How to Run
 
 1. Clone this repo or download the files.
